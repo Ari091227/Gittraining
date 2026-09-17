@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samurai & Fuji | 14-Day Japan Itinerary</title>
+    <meta
+      name="description"
+      content="A 14-day Japan itinerary covering Tokyo, Kyoto, and Osaka with a samurai and Mount Fuji-inspired travel plan under a ₹3 lakh budget."
+    />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap');
+
+      :root {
+        --bg: #f7f1e8;
+        --paper: rgba(255, 255, 255, 0.7);
+        --card: rgba(255, 255, 255, 0.78);
+        --ink: #1f1b1b;
+        --muted: #5d514d;
+        --crimson: #b51d2f;
+        --crimson-deep: #74131e;
+        --gold: #d7a84d;
+        --mist: #dfeaf4;
+        --sage: #8aa188;
+        --shadow: rgba(23, 27, 32, 0.16);
+      }
+
+      * { box-sizing: border-box; }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+        background:
+          radial-gradient(circle at top left, rgba(196, 29, 47, 0.18), transparent 35%),
+          linear-gradient(180deg, #f5efe8 0%, #f8f4ee 18%, #eef3f7 100%);
+        color: var(--ink);
+      }
+
+      .page-shell {
+        width: min(1200px, calc(100% - 32px));
+        margin: 0 auto;
+        padding-bottom: 72px;
+      }
+
+      .hero {
+        position: relative;
+        overflow: hidden;
+        margin-top: 28px;
+        border: 1px solid rgba(124, 102, 82, 0.15);
+        border-radius: 28px;
+        background:
+          linear-gradient(135deg, rgba(12, 19, 30, 0.32), rgba(13, 22, 33, 0.1)),
+          url('https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&fit=crop&w=1600&q=85') center/cover no-repeat;
+        box-shadow: 0 18px 40px rgba(36, 28, 25, 0.15);
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(90deg, rgba(18, 20, 24, 0.7), rgba(18, 20, 24, 0.25), rgba(18, 20, 24, 0.12));
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: end;
+        justify-content: space-between;
+        gap: 24px;
+        min-height: 380px;
+        padding: 42px 40px 34px;
+        color: white;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 14px;
+        border-radius: 999px;
+        border: 1px solid rgba(255, 255, 255, 0.26);
+        background: rgba(255, 255, 255, 0.08);
+        font-size: 11px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+
+      h1, h2, h3 {
+        font-family: 'Cormorant Garamond', serif;
+        margin: 0;
+        line-height: 0.94;
+      }
+
+      h1 {
+        margin-top: 18px;
+        font-size: clamp(3rem, 5vw, 5.2rem);
+        letter-spacing: -0.04em;
+      }
+
+      .hero-copy {
+        max-width: 620px;
+      }
+
+      .hero-copy p {
+        margin: 18px 0 0;
+        max-width: 540px;
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 1.06rem;
+        line-height: 1.7;
+      }
+
+      .cta-box {
+        min-width: min(100%, 260px);
+        background: rgba(255, 255, 255, 0.09);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 20px;
+        padding: 18px 18px 16px;
+        backdrop-filter: blur(8px);
+      }
+
+      .cta-box strong {
+        display: block;
+        font-size: 0.75rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      .cta-box .price {
+        display: block;
+        margin-top: 8px;
+        font-size: clamp(2rem, 4vw, 3rem);
+        font-weight: 800;
+        letter-spacing: -0.05em;
+      }
+
+      .cta-box span {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 0.92rem;
+      }
+
+      .section {
+        margin-top: 34px;
+      }
+
+      .section-heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        margin-bottom: 18px;
+      }
+
+      .section-heading h2 {
+        font-size: clamp(2.2rem, 5vw, 3.1rem);
+        color: var(--ink);
+      }
+
+      .section-badge {
+        font-size: 0.76rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--crimson-deep);
+        background: rgba(181, 29, 47, 0.08);
+        border: 1px solid rgba(181, 29, 47, 0.12);
+        border-radius: 999px;
+        padding: 8px 12px;
+      }
+
+      .day-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 18px;
+      }
+
+      .day-card {
+        position: relative;
+        padding: 22px 20px 18px;
+        border-radius: 22px;
+        background: linear-gradient(180deg, rgba(255,255,255,0.78), rgba(255,255,255,0.62));
+        border: 1px solid rgba(117, 115, 110, 0.12);
+        box-shadow: 0 12px 25px rgba(23, 27, 32, 0.06);
+        overflow: hidden;
+      }
+
+      .day-card.has-photo {
+        padding-top: 0;
+      }
+
+      .day-photo {
+        display: block;
+        width: calc(100% + 40px);
+        height: 150px;
+        margin: 0 -20px 20px;
+        object-fit: cover;
+        border-radius: 21px 21px 0 0;
+      }
+
+      .day-card::before {
+        content: "";
+        position: absolute;
+        inset: 0 auto auto 0;
+        width: 100%;
+        height: 5px;
+        background: linear-gradient(90deg, var(--crimson), var(--gold), rgba(255,255,255,0.2));
+      }
+
+      .day-card .meta {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        margin-bottom: 16px;
+      }
+
+      .day-pill {
+        display: inline-flex;
+        align-items: center;
+        padding: 7px 10px;
+        border-radius: 999px;
+        background: rgba(181, 29, 47, 0.08);
+        color: var(--crimson-deep);
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      .day-number {
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+
+      .day-card h3 {
+        font-size: clamp(1.8rem, 2.3vw, 2.3rem);
+        color: var(--ink);
+      }
+
+      .day-card .city {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 6px 9px;
+        border-radius: 999px;
+        background: rgba(138, 161, 136, 0.12);
+        color: #35513d;
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .day-card ul {
+        margin: 18px 0 0;
+        padding-left: 18px;
+        list-style: disc;
+        color: var(--muted);
+        line-height: 1.7;
+      }
+
+      .budget-box,
+      .tips-box {
+        background: rgba(255, 255, 255, 0.7);
+        border: 1px solid rgba(117, 115, 110, 0.12);
+        border-radius: 24px;
+        box-shadow: 0 12px 25px rgba(23, 27, 32, 0.05);
+      }
+
+      .budget-wrap {
+        display: grid;
+        grid-template-columns: 1.4fr 0.9fr;
+        gap: 20px;
+      }
+
+      .budget-box {
+        overflow: hidden;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      th, td {
+        padding: 16px 18px;
+        text-align: left;
+        border-bottom: 1px solid rgba(117, 115, 110, 0.12);
+      }
+
+      th {
+        background: rgba(181, 29, 47, 0.08);
+        color: var(--crimson-deep);
+        font-size: 0.72rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      td {
+        color: var(--ink);
+      }
+
+      .total-row td {
+        font-weight: 800;
+        color: var(--crimson-deep);
+        background: rgba(215, 168, 77, 0.12);
+      }
+
+      .budget-summary {
+        display: grid;
+        gap: 14px;
+        padding: 20px;
+      }
+
+      .summary-chip {
+        background: linear-gradient(135deg, rgba(181,29,47,0.06), rgba(215,168,77,0.08));
+        border: 1px solid rgba(181, 29, 47, 0.1);
+        border-radius: 18px;
+        padding: 16px 18px;
+      }
+
+      .summary-chip strong {
+        display: block;
+        font-size: 0.72rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+
+      .summary-chip .big {
+        margin-top: 8px;
+        font-size: clamp(1.8rem, 3vw, 2.7rem);
+        font-weight: 800;
+        letter-spacing: -0.05em;
+        color: var(--crimson-deep);
+      }
+
+      .tips-box {
+        padding: 22px 20px 18px;
+      }
+
+      .tips-list {
+        list-style: none;
+        margin: 18px 0 0;
+        padding: 0;
+        display: grid;
+        gap: 14px;
+      }
+
+      .tips-list li {
+        position: relative;
+        padding: 14px 14px 14px 42px;
+        border-radius: 14px;
+        background: rgba(223, 234, 244, 0.5);
+        color: var(--ink);
+        line-height: 1.65;
+      }
+
+      .tips-list li::before {
+        content: "✦";
+        position: absolute;
+        left: 14px;
+        top: 12px;
+        color: var(--crimson);
+        font-weight: 800;
+      }
+
+      footer {
+        margin-top: 30px;
+        text-align: center;
+        color: var(--muted);
+        font-size: 0.9rem;
+        padding-bottom: 10px;
+      }
+
+      @media (max-width: 740px) {
+        .hero-content {
+          padding: 28px 22px 24px;
+        }
+
+        .budget-wrap {
+          grid-template-columns: 1fr;
+        }
+
+        th, td {
+          padding: 12px 10px;
+          font-size: 0.92rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero-content">
+          <div class="hero-copy">
+            <div class="eyebrow">Japan • 14 Days • 2+ Cities</div>
+            <h1>Samurai &amp; Fuji</h1>
+            <p>
+              A balanced 14-day Japan journey through Tokyo, Kyoto, and Osaka—crafted for iconic landmarks,
+              street food, quiet temples, and a realistic total spend under ₹3 lakh.
+            </p>
+          </div>
+
+          <div class="cta-box">
+            <strong>Estimated budget</strong>
+            <span class="price">₹2.1L</span>
+            <span>average total per traveler</span>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="section">
+          <div class="section-heading">
+            <h2>14-Day Journey</h2>
+            <span class="section-badge">Tokyo • Kyoto • Osaka</span>
+          </div>
+
+          <div class="day-grid">
+            <article class="day-card has-photo">
+              <img class="day-photo" src="https://upload.wikimedia.org/wikipedia/commons/3/35/Minato_City%2C_Tokyo%2C_Japan.jpg" alt="Tokyo skyline at dusk" />
+              <div class="meta">
+                <span class="day-pill">Day 1</span>
+                <span class="day-number">Arrival</span>
+              </div>
+              <h3>Tokyo Arrival</h3>
+              <span class="city">Tokyo</span>
+              <ul>
+                <li>Arrive in Tokyo and settle into a central hotel in Shinjuku or Ueno.</li>
+                <li>Easy evening walk around Shibuya Crossing and Hachiko.</li>
+                <li>Keep the first night relaxed with ramen and city lights.</li>
+              </ul>
+            </article>
+
+            <article class="day-card has-photo">
+              <img class="day-photo" src="https://upload.wikimedia.org/wikipedia/commons/2/23/Exterior_facade_of_Kannon_Hall_Buddhist_temple_with_Goshikimaku_Buddhist_flags_Ninna-ji_Kyoto_Japan.jpg" alt="Traditional temple in Kyoto" />
+              <div class="meta">
+                <span class="day-pill">Day 2</span>
+                <span class="day-number">Culture</span>
+              </div>
+              <h3>Harajuku &amp; Meiji</h3>
+              <span class="city">Tokyo</span>
+              <ul>
+                <li>Visit Meiji Shrine, Omotesando, and Harajuku streets.</li>
+                <li>Spend late afternoon in Shibuya Sky or Tokyo Tower.</li>
+                <li>Enjoy a relaxed food crawl with sushi and desserts.</li>
+              </ul>
+            </article>
+
+            <article class="day-card has-photo">
+              <img class="day-photo" src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Tokyo_Tower%2C_Minato_City.jpg" alt="Tokyo Tower and city view" />
+              <div class="meta">
+                <span class="day-pill">Day 3</span>
+                <span class="day-number">Heritage</span>
+              </div>
+              <h3>Asakusa &amp; TeamLab</h3>
+              <span class="city">Tokyo</span>
+              <ul>
+                <li>Explore Senso-ji Temple and the historic lanes of Asakusa.</li>
+                <li>Visit Tokyo Skytree and Sumida River area.</li>
+                <li>Evening optional stop in Akihabara or Tokyo Station.</li>
+              </ul>
+            </article>
+
+            <article class="day-card has-photo">
+              <img class="day-photo" src="https://upload.wikimedia.org/wikipedia/commons/6/66/Mount_Fuji_at_sunset%2C_March_2025.jpg" alt="Mount Fuji at sunset" />
+              <div class="meta">
+                <span class="day-pill">Day 4</span>
+                <span class="day-number">Day trip</span>
+              </div>
+              <h3>Mt. Fuji Route</h3>
+              <span class="city">Tokyo</span>
+              <ul>
+                <li>Choose a Fuji Five Lakes or Hakone day trip if weather is clear.</li>
+                <li>Optionally keep it local with Odaiba and waterfront views.</li>
+                <li>Use the day to recharge before heading farther south.</li>
+              </ul>
+            </article>
+
+            <article class="day-card has-photo">
+              <img class="day-photo" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sunlight_through_clouds_and_view_of_Ginkaku-ji_Temple_from_above%2C_Kyoto%2C_Japan.jpg" alt="Historic Kyoto temple" />
+              <div class="meta">
+                <span class="day-pill">Day 5</span>
+                <span class="day-number">City</span>
+              </div>
+              <h3>Imperial Tokyo</h3>
+              <span class="city">Tokyo</span>
+              <ul>
+                <li>Walk the Imperial Palace East Gardens and surrounding neighborhoods.</li>
+                <li>Visit Ginza for shopping, cafés, and premium city energy.</li>
+                <li>Finish the night with a ramen crawl or izakaya dinner.</li>
+              </ul>
+            </article>
+
+            <article class="day-card has-photo">
+              <img class="day-photo" src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Four_ladies_wearing_a_yukata_in_front_of_the_North_Gate_of_Kiyomizu-dera_temple_Kyoto_Japan.jpg" alt="Kyoto temple district" />
+              <div class="meta">
+                <span class="day-pill">Day 6</span>
+                <span class="day-number">Transit</span>
+              </div>
+              <h3>Tokyo to Kyoto</h3>
+              <span class="city">Kyoto</span>
+              <ul>
+                <li>Take the Shinkansen early morning to Kyoto.</li>
+                <li>Check in and explore Gion, Yasaka Shrine, and Kamo River.</li>
+                <li>Evening stroll in the lantern-lit alleys of Higashiyama.</li>
+              </ul>
+            </article>
+
+            <article class="day-card has-photo">
+              <img class="day-photo" src="https://upload.wikimedia.org/wikipedia/commons/4/47/Dotonbori%2C_Osaka%2C_at_night%2C_November_2016.jpg" alt="Dotonbori in Osaka at night" />
+              <div class="meta">
+                <span class="day-pill">Day 7</span>
+                <span class="day-number">Temples</span>
+              </div>
+              <h3>Kyoto Heritage</h3>
+              <span class="city">Kyoto</span>
+              <ul>
+                <li>Visit Kiyomizu-dera, Kodai-ji, and the historic lanes of Ninenzaka.</li>
+                <li>Take a slow afternoon around Kiyamachi and Pontocho.</li>
+                <li>Try Kyoto-style kaiseki or noodle specialties.</li>
+              </ul>
+            </article>
+
+            <article class="day-card has-photo">
+              <img class="day-photo" src="https://upload.wikimedia.org/wikipedia/commons/3/30/Shika_Senbei_1_%286694066527%29.jpg" alt="Deer in Nara Park" />
+              <div class="meta">
+                <span class="day-pill">Day 8</span>
+                <span class="day-number">Scenic</span>
+              </div>
+              <h3>Arashiyama</h3>
+              <span class="city">Kyoto</span>
+              <ul>
+                <li>Walk through the bamboo grove and Tenryu-ji Temple.</li>
+                <li>Enjoy riverside views and the iconic Togetsukyo Bridge.</li>
+                <li>Optional monkey park stop for added adventure.</li>
+              </ul>
+            </article>
+
+            <article class="day-card">
+              <div class="meta">
+                <span class="day-pill">Day 9</span>
+                <span class="day-number">Sacred</span>
+              </div>
+              <h3>Fushimi Inari</h3>
+              <span class="city">Kyoto</span>
+              <ul>
+                <li>Begin early with a sunrise climb at Fushimi Inari Taisha.</li>
+                <li>Visit Nishiki Market for snacks, sweets, and local foods.</li>
+                <li>Spend the late afternoon at a tea house or café.</li>
+              </ul>
+            </article>
+
+            <article class="day-card">
+              <div class="meta">
+                <span class="day-pill">Day 10</span>
+                <span class="day-number">City</span>
+              </div>
+              <h3>Kyoto to Osaka</h3>
+              <span class="city">Osaka</span>
+              <ul>
+                <li>Transfer to Osaka and stretch out in Namba.</li>
+                <li>Explore Dotonbori and soak in the neon food streets.</li>
+                <li>Evening at Umeda Sky Building or a local bar alley.</li>
+              </ul>
+            </article>
+
+            <article class="day-card">
+              <div class="meta">
+                <span class="day-pill">Day 11</span>
+                <span class="day-number">Fun</span>
+              </div>
+              <h3>Osaka Icons</h3>
+              <span class="city">Osaka</span>
+              <ul>
+                <li>Choose between Universal Studios Japan or Osaka Castle.</li>
+                <li>Enjoy the evening food crawl and shopping in Dotonbori.</li>
+                <li>Use the stop to enjoy Osaka’s energetic nightlife.</li>
+              </ul>
+            </article>
+
+            <article class="day-card">
+              <div class="meta">
+                <span class="day-pill">Day 12</span>
+                <span class="day-number">Day trip</span>
+              </div>
+              <h3>Nara Escape</h3>
+              <span class="city">Nara</span>
+              <ul>
+                <li>Visit Nara Park and see the famous free-roaming deer.</li>
+                <li>Explore Todai-ji Temple and Kasuga Taisha.</li>
+                <li>Relax with a light local lunch and scenic walk.</li>
+              </ul>
+            </article>
+
+            <article class="day-card">
+              <div class="meta">
+                <span class="day-pill">Day 13</span>
+                <span class="day-number">Flex</span>
+              </div>
+              <h3>Free Day</h3>
+              <span class="city">Flexible</span>
+              <ul>
+                <li>Optional trip to Hiroshima and Miyajima if you want more history.</li>
+                <li>Or keep the day for shopping, cafés, and rest in Osaka or Kyoto.</li>
+                <li>Use flexibility to absorb delays or a slower travel rhythm.</li>
+              </ul>
+            </article>
+
+            <article class="day-card">
+              <div class="meta">
+                <span class="day-pill">Day 14</span>
+                <span class="day-number">Departure</span>
+              </div>
+              <h3>Departure Day</h3>
+              <span class="city">Airport</span>
+              <ul>
+                <li>Do a final morning walk or local shopping in Osaka/Kyoto.</li>
+                <li>Head to KIX or the nearest airport for your return flight.</li>
+                <li>Keep the final day light and easy for a stress-free exit.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-heading">
+            <h2>Budget Snapshot</h2>
+            <span class="section-badge">Under ₹3 lakh</span>
+          </div>
+
+          <div class="budget-wrap">
+            <div class="budget-box">
+              <table aria-label="Japan trip budget table">
+                <thead>
+                  <tr>
+                    <th>Category</th>
+                    <th>Estimated cost</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Flights (India to Tokyo + return)</td>
+                    <td>₹35,000 – ₹50,000</td>
+                  </tr>
+                  <tr>
+                    <td>Accommodation</td>
+                    <td>₹55,000 – ₹80,000</td>
+                  </tr>
+                  <tr>
+                    <td>Local transport</td>
+                    <td>₹12,000 – ₹20,000</td>
+                  </tr>
+                  <tr>
+                    <td>Food</td>
+                    <td>₹25,000 – ₹40,000</td>
+                  </tr>
+                  <tr>
+                    <td>Attractions &amp; tickets</td>
+                    <td>₹20,000 – ₹35,000</td>
+                  </tr>
+                  <tr>
+                    <td>Shopping &amp; buffer</td>
+                    <td>₹15,000 – ₹25,000</td>
+                  </tr>
+                  <tr class="total-row">
+                    <td>Total</td>
+                    <td>₹1.6L – ₹2.5L</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <aside class="budget-summary">
+              <div class="summary-chip">
+                <strong>Target spend</strong>
+                <div class="big">₹2.1L</div>
+              </div>
+              <div class="summary-chip">
+                <strong>Budget cushion</strong>
+                <div class="big">₹40K+</div>
+              </div>
+              <div class="summary-chip">
+                <strong>Best value route</strong>
+                <div class="big">Tokyo + Kyoto + Osaka</div>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-heading">
+            <h2>Travel Tips</h2>
+            <span class="section-badge">Smart planning</span>
+          </div>
+
+          <div class="tips-box">
+            <ul class="tips-list">
+              <li>Book the Tokyo–Kyoto Shinkansen early to lock in better fares and smoother schedules.</li>
+              <li>Choose a hotel near a train station or metro line to cut daily commutes and save money.</li>
+              <li>Carry a Suica or IC card for easy public transport payments across major cities.</li>
+              <li>Keep one flexible day free for weather, travel delays, or spontaneous side trips.</li>
+              <li>Prioritize food streets like Dotonbori, Nishiki Market, and ramen hubs to get the most value from your budget.</li>
+            </ul>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        Crafted for a memorable Japan route with samurai atmosphere, Fuji-inspired views, and a realistic budget.
+      </footer>
+    </div>
+  </body>
+</html>
