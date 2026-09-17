@@ -54,7 +54,7 @@
         border-radius: 28px;
         background:
           linear-gradient(135deg, rgba(12, 19, 30, 0.32), rgba(13, 22, 33, 0.1)),
-          url('https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&fit=crop&w=1600&q=85') center/cover no-repeat;
+          url('https://upload.wikimedia.org/wikipedia/commons/6/66/Mount_Fuji_at_sunset%2C_March_2025.jpg') center/cover no-repeat;
         box-shadow: 0 18px 40px rgba(36, 28, 25, 0.15);
       }
 
@@ -189,6 +189,14 @@
         border: 1px solid rgba(117, 115, 110, 0.12);
         box-shadow: 0 12px 25px rgba(23, 27, 32, 0.06);
         overflow: hidden;
+        transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+      }
+
+      .day-card:hover,
+      .day-card:focus-within {
+        transform: translateY(-8px) scale(1.015);
+        border-color: rgba(181, 29, 47, 0.28);
+        box-shadow: 0 22px 38px rgba(23, 27, 32, 0.16);
       }
 
       .day-card.has-photo {
@@ -518,7 +526,7 @@
             </article>
 
             <article class="day-card has-photo">
-              <img class="day-photo" src="https://upload.wikimedia.org/wikipedia/commons/4/47/Dotonbori%2C_Osaka%2C_at_night%2C_November_2016.jpg" alt="Dotonbori in Osaka at night" />
+              <img class="day-photo" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sunlight_through_clouds_and_view_of_Ginkaku-ji_Temple_from_above%2C_Kyoto%2C_Japan.jpg" alt="Historic Kyoto temple and autumn trees" />
               <div class="meta">
                 <span class="day-pill">Day 7</span>
                 <span class="day-number">Temples</span>
@@ -533,7 +541,7 @@
             </article>
 
             <article class="day-card has-photo">
-              <img class="day-photo" src="https://upload.wikimedia.org/wikipedia/commons/3/30/Shika_Senbei_1_%286694066527%29.jpg" alt="Deer in Nara Park" />
+              <img class="day-photo" src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Bamboo_Forest%2C_Arashiyama%2C_Kyoto%2C_Japan.jpg" alt="Arashiyama bamboo grove in Kyoto" />
               <div class="meta">
                 <span class="day-pill">Day 8</span>
                 <span class="day-number">Scenic</span>
@@ -547,7 +555,8 @@
               </ul>
             </article>
 
-            <article class="day-card">
+            <article class="day-card has-photo">
+              <img class="day-photo" src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Four_ladies_wearing_a_yukata_in_front_of_the_North_Gate_of_Kiyomizu-dera_temple_Kyoto_Japan.jpg" alt="Fushimi Inari and Kyoto temple district" />
               <div class="meta">
                 <span class="day-pill">Day 9</span>
                 <span class="day-number">Sacred</span>
@@ -561,7 +570,8 @@
               </ul>
             </article>
 
-            <article class="day-card">
+            <article class="day-card has-photo">
+              <img class="day-photo" src="https://upload.wikimedia.org/wikipedia/commons/4/47/Dotonbori%2C_Osaka%2C_at_night%2C_November_2016.jpg" alt="Dotonbori in Osaka at night" />
               <div class="meta">
                 <span class="day-pill">Day 10</span>
                 <span class="day-number">City</span>
@@ -575,7 +585,8 @@
               </ul>
             </article>
 
-            <article class="day-card">
+            <article class="day-card has-photo">
+              <img class="day-photo" src="https://upload.wikimedia.org/wikipedia/commons/4/47/Dotonbori%2C_Osaka%2C_at_night%2C_November_2016.jpg" alt="Osaka neon streets" />
               <div class="meta">
                 <span class="day-pill">Day 11</span>
                 <span class="day-number">Fun</span>
@@ -589,7 +600,8 @@
               </ul>
             </article>
 
-            <article class="day-card">
+            <article class="day-card has-photo">
+              <img class="day-photo" src="https://upload.wikimedia.org/wikipedia/commons/3/30/Shika_Senbei_1_%286694066527%29.jpg" alt="Deer in Nara Park" />
               <div class="meta">
                 <span class="day-pill">Day 12</span>
                 <span class="day-number">Day trip</span>
@@ -603,7 +615,8 @@
               </ul>
             </article>
 
-            <article class="day-card">
+            <article class="day-card has-photo">
+              <img class="day-photo" src="https://upload.wikimedia.org/wikipedia/commons/6/66/Mount_Fuji_at_sunset%2C_March_2025.jpg" alt="Mount Fuji at sunset" />
               <div class="meta">
                 <span class="day-pill">Day 13</span>
                 <span class="day-number">Flex</span>
@@ -617,7 +630,8 @@
               </ul>
             </article>
 
-            <article class="day-card">
+            <article class="day-card has-photo">
+              <img class="day-photo" src="https://upload.wikimedia.org/wikipedia/commons/7/75/Minato_City%2C_Tokyo%2C_Japan_%28Night%29.jpg" alt="Tokyo city lights at night" />
               <div class="meta">
                 <span class="day-pill">Day 14</span>
                 <span class="day-number">Departure</span>
